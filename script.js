@@ -1,7 +1,14 @@
+/**************** 
+    HTML elements 
+*****************/
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector("nav");
 const hamburgerIcon = document.querySelector("#hamburger-icon");
 
+/**************** 
+    Behaviour 
+*****************/
+/* navigation menu (hamburger) handler */
 menuIcon.addEventListener("click", () => {
   if (hamburgerIcon.classList.contains("fa-bars")) {
     // change to cross

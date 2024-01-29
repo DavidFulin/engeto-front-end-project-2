@@ -34,89 +34,103 @@
     General 
 *****************/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: var(--font-family);
-    font-size: var(--font-size-default);
-    color: var(--color-black);
-  }
+  font-family: var(--font-family);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-small);
+  color: var(--color-black);
+}
 
 /**************** 
     Header 
 *****************/
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--color-green);
-    height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-green);
+  height: var(--header-height);
 }
 
 .logo {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .logo img {
-    width: 9rem;
-    margin-left: 0.4rem;
+  width: 9rem;
+  margin-left: 0.4rem;
 }
 
 /* Navigation */
 nav {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 nav li {
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 1.4rem;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 1.4rem;
 }
 
 nav li i {
-    color: var(--color-white);
-    padding-right: 0.2rem;
+  color: var(--color-white);
+  padding-right: 0.2rem;
 }
 
 nav li a {
-    color: var(--color-white);
-    text-decoration: none;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 nav li a:hover {
-    border-bottom: 0.2rem solid var(--color-white);
+  border-bottom: 0.2rem solid var(--color-white);
 }
 
 .menu-icon {
-    display: none;
-    margin-right: 1.5rem;
+  display: none;
+  margin-right: 1.5rem;
 }
 
 /*********************
     Main content
 *********************/
 main {
-    background: url("img/background.jpg");
-    min-height: calc(100vh - var(--header-height));
-    background-size: cover;
-    background-position: left;
-    padding: 1rem;
+  background: url("img/background.jpg");
+  min-height: calc(100vh - var(--header-height));
+  background-size: cover;
+  background-position: left;
+  padding: 1rem;
 }
 
 main section {
-    width: 80%;
-    margin: 2rem auto;
-    background-color: rgba(255,255,255, 0.8);
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--color-green);
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--color-green);
 }
 
 main section h1 {
-    text-align: center;
-    padding-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
+/**************** 
+    Footer 
+*****************/
+footer {
+  background-color: var(--color-green);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer h6 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+}
